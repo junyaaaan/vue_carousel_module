@@ -17,10 +17,12 @@
               v-for="(item, index) in banners"
               :key="index"
             >
-              <img class="bannerCarousel__itemImage"
-                :src="item.imagePath"
-                :alt="item.alt"
-              >
+              <a :href="item.href">
+                <img class="bannerCarousel__itemImage"
+                  :src="item.imagePath"
+                  :alt="item.alt"
+                >
+              </a>
             </li>
           </ul>
         </div>
