@@ -89,8 +89,8 @@ export default {
   computed: {
     bannerCarouselStyle() {
       return {
-        width: this.banners.length * 640 + 'px',
-        transform: 'translateX(' + this.visible_content * -640 + 'px)'
+        width: this.banners.length * 80 + 'vw',
+        transform: 'translateX(' + this.visible_content * -80 + 'vw)'
       }
     },
   },
@@ -99,7 +99,7 @@ export default {
 
 <style lang="scss">
 .bannerCarousel {
-  width: 820px;
+  width: 100vw;
   margin: 0 auto;
   &__wrap {
     display: flex;
@@ -107,13 +107,12 @@ export default {
   }
 
   &__stage {
-    width: 640px;
+    width: 80vw;
     overflow: hidden;
   }
 
   &_ui {
-    padding: 0 10px;
-    width: 90px;
+    width: 10vw;
   }
 
   &__inner {
@@ -127,6 +126,7 @@ export default {
   &__item {
     list-style: none;
     margin-right: 5px;
+    width: 80vw;
   }
 
   &__itemImage {
@@ -137,11 +137,12 @@ export default {
     border: solid 1px #ddd;
     background: #fff;
     color: #dddddd;
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    line-height: 70px;
-    font-size: 35px;
+    width: 8vw;
+    height: 8vw;
+    margin: 0 auto;
+    border-radius: 4vw;
+    line-height: 8vw;
+    font-size: 4vw;
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     outline: none;
